@@ -58,7 +58,11 @@
     width: 60px;
     height: 60px;
     object-fit: contain;
+    flex-shrink: 0;
     margin-right: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ddd;
   }
   
   .experience h3 {
