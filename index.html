@@ -1,63 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nour Shaheen</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    h1, h2 {
-      color: #222;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    a {
-      color: #0366d6;
-      text-decoration: none;
-    }
-    ul {
-      padding-left: 20px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nour Shaheen | Academic Website</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h1>Nour Shaheen</h1>
-  <p>Email: <a href="mailto:nourheshamshaheen@gmail.com">nourheshamshaheen@gmail.com</a> | <a href="mailto:nour.shaheen@polymtl.ca">nour.shaheen@polymtl.ca</a> | <a href="mailto:nourshaheen@mila.quebec">nourshaheen@mila.quebec</a></p>
-  <p>GitHub: <a href="https://github.com/nourheshamshaheen">github.com/nourheshamshaheen</a></p>
+  <div class="container">
+    <header>
+      <img src="images/profile.jpg" alt="Nour Shaheen" class="profile-img" />
+      <h1>Nour Shaheen</h1>
+      <p>Email: <a href="mailto:nourheshamshaheen@gmail.com">nourheshamshaheen@gmail.com</a> | <a href="mailto:nour.shaheen@polymtl.ca">nour.shaheen@polymtl.ca</a> | <a href="mailto:nourshaheen@mila.quebec">nourshaheen@mila.quebec</a></p>
+      <p>GitHub: <a href="https://github.com/nourheshamshaheen">github.com/nourheshamshaheen</a></p>
+    </header>
 
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li><strong>MSc. in Computer Engineering</strong>, Polytechnique Montreal, Canada (2024–2026)</li>
-      <li><strong>BSc. in Computer and Communications Engineering</strong>, Alexandria University, Egypt (2019–2024)</li>
-    </ul>
-  </section>
+    <main>
+      <section>
+        <h2>Education</h2>
+        <div class="experience">
+          <img src="images/polytechnique_montreal.png" alt="Polytechnique Montreal" class="logo" />
+          <div>
+            <h3>MSc. in Computer Engineering</h3>
+            <p>Polytechnique Montreal, Canada</p>
+            <p><strong>Aug 2024 – Jun 2026</strong></p>
+            <ul>
+              <li>Research Assistant in the Data Systems Group under the supervision of Prof. Amine Mhedhbi. </li>
+              <li>Research Assistant at Mila, co-supervised by Prof. Sarath Chandar.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience">
+          <img src="images/alexandria_university.png" alt="Alexandria University" class="logo" />
+          <div>
+            <h3>BSc. in Computer and Communications Engineering</h3>
+            <p>Alexandria University, Egypt</p>
+            <p><strong>Sep 2019 – Jul 2024</strong></p>
+          </div>
+        </div>
+      </section>
 
-  <section>
-    <h2>Publications</h2>
-    <ul>
-      <li><em>Towards Optimizing SQL Generation via LLM Routing</em>, TRL @ NeurIPS 2024 – <a href="https://arxiv.org/abs/2411.04319">arXiv</a></li>
-      <li><em>C2F-CHART: A Curriculum Learning Approach to Chart Classification</em>, ICPR 2024 – <a href="https://arxiv.org/abs/2409.04683">arXiv</a></li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Research & Industry Experience</h2>
-    <ul>
-      <li>Research Engineer – Applied Innovation Center, Egypt (2023–2024)</li>
-      <li>Machine Learning Intern – Microsoft, Egypt (2023)</li>
-      <li>Computer Vision Intern – MBZUAI, UAE (2023)</li>
-      <li>Natural Language Processing Intern – ArabEasy LLC (Remote, 2023)</li>
-      <li>Computer Vision Intern – Applied Innovation Center, Egypt (2022–2023)</li>
-      <li>Software Engineer – M.I.A Robotics, Egypt (2021–2022)</li>
-    </ul>
-  </section>
+      <section>
+        <h2>Research & Industry Experience</h2>
+        <div class="experience">
+          <img src="images/applied_innovation.png" alt="Applied Innovation Center" class="logo" />
+          <div>
+            <h3>Computer Vision R&D Engineer</h3>
+            <p>Applied Innovation Center, Egypt</p>
+            <p><strong>Sep 2023 – Jul 2024</strong></p>
+            <ul>
+              <li>Implemented chart classification architecture using coarse-to-fine curriculum learning achieving SOTA results.</li>
+              <li>Fine-tuned data extraction models on chart-to-table tasks using various datasets.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience">
+          <img src="images/microsoft.jpg" alt="Microsoft" class="logo" />
+          <div>
+            <h3>Machine Learning R&D Intern</h3>
+            <p>Microsoft, Egypt</p>
+            <p><strong>Jul 2023 – Sep 2023</strong></p>
+            <ul>
+              <li>Researched methods to mitigate hallucinations in LLMs using GPT meta-prompting.</li>
+              <li>Improved hallucination rates by 60% in general summarization tasks.</li>
+              <li>Developed components in a content filtering pipeline deployed in production using Azure.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience">
+          <img src="images/mbzuai.jpg" alt="MBZUAI" class="logo" />
+          <div>
+            <h3>Computer Vision R&D Intern</h3>
+            <p>MBZUAI, UAE</p>
+            <p><strong>May 2023 – Jun 2023</strong></p>
+            <ul>
+              <li>Collaborated on Text-to-3D Avatar Generation pipeline development.</li>
+              <li>Fine-tuned Generative Diffusion Models for high-quality face generation from text descriptions.</li>
+              <li>Developed evaluation metrics for prompt-driven 3D avatar generation quality assessment.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience">
+          <img src="images/arabeasy.png" alt="ArabEasy LLC" class="logo" />
+          <div>
+            <h3>NLP & Data Science Intern</h3>
+            <p>ArabEasy LLC (Remote)</p>
+            <p><strong>Mar 2023 – May 2023</strong></p>
+            <ul>
+              <li>Researched reinforcement learning applications in training LLMs for neural machine translation.</li>
+              <li>Implemented fine-tuning of transformer-based LLMs for Arabic to English translation.</li>
+              <li>Conducted literature reviews on reinforcement learning and neural machine translation.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience">
+          <img src="images/applied_innovation.jpeg" alt="Applied Innovation Center" class="logo" />
+          <div>
+            <h3>Computer Vision R&D Intern</h3>
+            <p>Applied Innovation Center, Egypt</p>
+            <p><strong>Jul 2022 – May 2023</strong></p>
+            <ul>
+              <li>Developed and evaluated deep learning models for semantic segmentation of high-resolution remote sensing imagery.</li>
+              <li>Explored literature on semantic segmentation, feature extraction, and domain adaptation techniques.</li>
+              <li>Implemented ensemble methods to enhance model inference accuracy.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
+
+
