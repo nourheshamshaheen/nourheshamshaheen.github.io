@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nour Shaheen | Academic Website</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <title>Nour Shaheen</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+
 </head>
 <body>
   <div class="container">
@@ -13,48 +15,135 @@
         <img src="images/profile.jpg" alt="Nour Shaheen" class="profile-img" />
       </div>
       <h1>Nour Shaheen</h1>
-      <p>Email: <a href="mailto:nourheshamshaheen@gmail.com">nourheshamshaheen@gmail.com</a> | <a href="mailto:nour.shaheen@polymtl.ca">nour.shaheen@polymtl.ca</a> | <a href="mailto:nourshaheen@mila.quebec">nourshaheen@mila.quebec</a></p>
-      <p>GitHub: <a href="https://github.com/nourheshamshaheen">github.com/nourheshamshaheen</a></p>
+      <br>
+      <p class="bio">
+        I am a master’s student in computer engineering at Polytechnique Montreal and at Mila. My research interests include optimization, the use of large language models for data-oriented tasks, tabular foundation models, curriculum learning, and model-merging techniques. I graduated third in my class with honors from Alexandria University and interned at Microsoft, MBZUAI, and the Applied Innovation Center.
+      </p>
+      <br>
+      <p>
+        Email:
+        <a href="mailto:nourheshamshaheen@gmail.com">nourheshamshaheen@gmail.com</a> |
+        <a href="mailto:nour.shaheen@polymtl.ca">nour.shaheen@polymtl.ca</a> |
+        <a href="mailto:nourshaheen@mila.quebec">nourshaheen@mila.quebec</a>
+      </p>
+      <p>
+        <a href="https://scholar.google.ca/citations?view_op=list_works&hl=en&user=UrmAvfMAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        |
+        <a href="https://www.linkedin.com/in/nourheshamshaheen/" target="_blank" rel="noopener">LinkedIn</a>
+        |
+        <a href="https://github.com/nourheshamshaheen/" target="_blank" rel="noopener">GitHub</a>
+      </p>
     </header>
-
+    
+    
+  
     <main>
+    <!-- Publications -->
+    <section class="publications">
+      <h2>Publications</h2>
+      <ul>
+        <li class="pub-item">
+          <div class="pub-image-wrapper">
+            <img src="images/sql.png" alt="SQL Routing paper" class="pub-image" />
+          </div>
+          <div class="pub-text">
+            <strong>Towards Optimizing SQL Generation via LLM Routing</strong>
+            Mohammedhossein Malekpour, <b>Nour Shaheen</b>, Foutse Khomh, and Amine Mhedhbi.<br>
+            Accepted at NeurIPS 2024 Third Table Representation Learning Workshop (TRL @ NeurIPS).<br>
+            <a href="https://arxiv.org/abs/2411.04319" target="_blank" rel="noopener">
+              <img
+                src="https://img.shields.io/badge/arXiv-View%20on%20arXiv-b31b1b.svg?style=plastic&logo=arxiv&logoColor=white"
+                alt="View on arXiv"
+              />
+            </a>
+      
+        </div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-image-wrapper">
+            <img src="images/c2f.png" alt="C2F-CHART paper" class="pub-image" />
+          </div>
+          <div class="pub-text">
+            <strong>C2F-CHART: A Curriculum Learning Approach to Chart Classification</strong>
+            <b>Nour Shaheen</b>, Tamer Elsharnouby, and Marwan Torki.<br>
+            Accepted at the 2024 International Conference on Pattern Recognition (ICPR).<br>
+            <a href="https://arxiv.org/abs/2409.04683" target="_blank" rel="noopener">
+              <img
+                src="https://img.shields.io/badge/arXiv-View%20on%20arXiv-b31b1b.svg?style=plastic&logo=arxiv&logoColor=white"
+                alt="View on arXiv"
+              />
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
+  
+      <!-- Education -->
       <section>
         <h2>Education</h2>
+  
         <div class="experience">
           <div class="logo-wrapper">
             <img src="images/polytechnique_montreal.png" alt="Polytechnique Montreal" class="logo" />
           </div>
           <div>
             <h3>MSc. in Computer Engineering</h3>
-            <p>Polytechnique Montreal, Canada</p>
+            <p>Polytechnique Montreal - <i>Quebec, Canada</i></p>
             <p><strong>Aug 2024 – Jun 2026</strong></p>
+            <p><strong>cGPA: 4.0/4.0</strong></p>
             <ul>
-              <li>Research Assistant in the Data Systems Group under the supervision of Prof. Amine Mhedhbi.</li>
-              <li>Research Assistant at Mila, co-supervised by Prof. Sarath Chandar.</li>
+              <li>Research Assistant in the Data Systems Group under the supervision of <b>Prof. Amine Mhedhbi</b>.</li>
+              <li>Research Assistant at Mila, co-supervised by <b>Prof. Sarath Chandar</b>.</li>
             </ul>
           </div>
         </div>
+  
         <div class="experience">
           <div class="logo-wrapper">
             <img src="images/alexandria_university.png" alt="Alexandria University" class="logo" />
           </div>
           <div>
             <h3>BSc. in Computer and Communications Engineering</h3>
-            <p>Alexandria University, Egypt</p>
+            <p>Alexandria University – <i>Alexandria, Egypt</i></p>
             <p><strong>Sep 2019 – Jul 2024</strong></p>
+            <p><strong>cGPA: 3.99 / 4.0</strong></p>
+            <ul>
+              <li><strong>Graduation Thesis:</strong> Developed a federated learning pipeline for cross-hospital digital pathology, implementing secure aggregation and client-side training on histopathology datasets. This was done under the supervision of Prof. Ayman Khalafallah.</li>
+              <li>Ranked 3rd in class with honors.</li>
+            </ul>
           </div>
         </div>
+        
       </section>
-
+  
+      <!-- Research & Industry Experience -->
       <section>
         <h2>Research & Industry Experience</h2>
+
         <div class="experience">
           <div class="logo-wrapper">
-            <img src="images/applied_innovation.png" alt="Applied Innovation Center" class="logo" />
+            <img src="images/mila.png" alt="Mila" class="logo" />
+          </div>
+          <div>
+            <h3>Research Master's Student</h3>
+            <p>Mila - Quebec AI Institute - <i>Quebec, Canada</i></p>
+            <p><strong>April 2025 – <i>Current</i> </strong></p>
+            <ul>
+              <li>Working on different research projects.</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="experience">
+          <div class="logo-wrapper">
+            <img src="images/applied_innovation.jpeg" alt="Applied Innovation Center" class="logo" />
           </div>
           <div>
             <h3>Computer Vision R&D Engineer</h3>
-            <p>Applied Innovation Center, Egypt</p>
+            <p>Applied Innovation Center - <i>Alexandria, Egypt</i></p>
             <p><strong>Sep 2023 – Jul 2024</strong></p>
             <ul>
               <li>Implemented chart classification architecture using coarse-to-fine curriculum learning achieving SOTA results.</li>
@@ -62,13 +151,14 @@
             </ul>
           </div>
         </div>
+  
         <div class="experience">
           <div class="logo-wrapper">
             <img src="images/microsoft.jpg" alt="Microsoft" class="logo" />
           </div>
           <div>
             <h3>Machine Learning R&D Intern</h3>
-            <p>Microsoft, Egypt</p>
+            <p>Microsoft - <i>Cairo, Egypt</i></p>
             <p><strong>Jul 2023 – Sep 2023</strong></p>
             <ul>
               <li>Researched methods to mitigate hallucinations in LLMs using GPT meta-prompting.</li>
@@ -77,13 +167,14 @@
             </ul>
           </div>
         </div>
+  
         <div class="experience">
           <div class="logo-wrapper">
             <img src="images/mbzuai.jpg" alt="MBZUAI" class="logo" />
           </div>
           <div>
             <h3>Computer Vision R&D Intern</h3>
-            <p>MBZUAI, UAE</p>
+            <p>Mohammed Bin Zayed University of AI - <i>Abu Dhabi, UAE</i></p>
             <p><strong>May 2023 – Jun 2023</strong></p>
             <ul>
               <li>Collaborated on Text-to-3D Avatar Generation pipeline development.</li>
@@ -92,13 +183,14 @@
             </ul>
           </div>
         </div>
+  
         <div class="experience">
           <div class="logo-wrapper">
             <img src="images/arabeasy.png" alt="ArabEasy LLC" class="logo" />
           </div>
           <div>
             <h3>NLP & Data Science Intern</h3>
-            <p>ArabEasy LLC (Remote)</p>
+            <p>ArabEasy LLC - <i>Sharjah, UAE (Remote)</i></p>
             <p><strong>Mar 2023 – May 2023</strong></p>
             <ul>
               <li>Researched reinforcement learning applications in training LLMs for neural machine translation.</li>
@@ -107,13 +199,14 @@
             </ul>
           </div>
         </div>
+  
         <div class="experience">
           <div class="logo-wrapper">
             <img src="images/applied_innovation.jpeg" alt="Applied Innovation Center" class="logo" />
           </div>
           <div>
             <h3>Computer Vision R&D Intern</h3>
-            <p>Applied Innovation Center, Egypt</p>
+            <p>Applied Innovation Center - <i>Alexandria, Egypt</i></p>
             <p><strong>Jul 2022 – May 2023</strong></p>
             <ul>
               <li>Developed and evaluated deep learning models for semantic segmentation of high-resolution remote sensing imagery.</li>
@@ -123,6 +216,28 @@
           </div>
         </div>
       </section>
+
+      <!-- TAships -->
+    <section class="ta-ships">
+      <h2>TAships</h2>
+
+      <div class="experience">
+        <div class="logo-wrapper">
+          <img src="images/polytechnique_montreal.png" alt="Polytechnique Montreal" class="logo" />
+        </div>
+        <div>
+          <h3>INF3710: Files and Databases</h3>
+          <p>Polytechnique Montreal</p>
+          <p><strong>Description:</strong> Introduction to files and databases: needs analysis via the entity–relationship model; relational model and relational algebra; SQL DDL/DML and embedded SQL; concurrency control and transaction management; relational schema design (functional dependencies and normal forms); storage models and file structures; indexing and hashing.</p>
+          <ul>
+            <li>Fall 2024 — TA for Prof. Amine Mhedhbi</li>
+            <li>Winter 2025 — TA for Prof. Omar Abdul Wahab</li>
+            <li>Summer 2025 — TA for Prof. Franjieh El Khoury</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     </main>
   </div>
 </body>
